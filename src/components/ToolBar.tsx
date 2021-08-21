@@ -29,52 +29,52 @@ function ToolBar(calcul: CurrentCalcul) {
 
     const classes = useStyles();
     let one = (): void => {
-        calcul.setCalcul(calcul.calcul + "1 ")
+        calcul.setCalcul(calcul.calcul + "1")
     }
     let two = (): void => {
-        calcul.setCalcul(calcul.calcul + "2 ")
+        calcul.setCalcul(calcul.calcul + "2")
     }
     let three = (): void => {
-        calcul.setCalcul(calcul.calcul + "3 ")
+        calcul.setCalcul(calcul.calcul + "3")
     }
     let four = (): void => {
-        calcul.setCalcul(calcul.calcul + "4 ")
+        calcul.setCalcul(calcul.calcul + "4")
     }
     let five = (): void => {
-        calcul.setCalcul(calcul.calcul + "5 ")
+        calcul.setCalcul(calcul.calcul + "5")
     }
     let six = (): void => {
-        calcul.setCalcul(calcul.calcul + "6 ")
+        calcul.setCalcul(calcul.calcul + "6")
     }
     let seven = (): void => {
-        calcul.setCalcul(calcul.calcul + "7 ")
+        calcul.setCalcul(calcul.calcul + "7")
     }
     let eight = (): void => {
-        calcul.setCalcul(calcul.calcul + "8 ")
+        calcul.setCalcul(calcul.calcul + "8")
     }
     let nine = (): void => {
-        calcul.setCalcul(calcul.calcul + "9 ")
+        calcul.setCalcul(calcul.calcul + "9")
     }
     let clear = (): void => {
         calcul.setCalcul("")
     }
     let plus = (): void => {
-        calcul.setCalcul(calcul.calcul + "+ ")
+        calcul.setCalcul(calcul.calcul + " + ")
     }
     let minus = (): void => {
-        calcul.setCalcul(calcul.calcul + "- ")
+        calcul.setCalcul(calcul.calcul + " - ")
     }
     let div = (): void => {
-        calcul.setCalcul(calcul.calcul + "/ ")
+        calcul.setCalcul(calcul.calcul + " / ")
     }
     let mod = (): void => {
-        calcul.setCalcul(calcul.calcul + "% ")
+        calcul.setCalcul(calcul.calcul + " % ")
     }
     let time = (): void => {
-        calcul.setCalcul(calcul.calcul + "* ")
+        calcul.setCalcul(calcul.calcul + " * ")
     }
     let zero = (): void => {
-        calcul.setCalcul(calcul.calcul + "0 ")
+        calcul.setCalcul(calcul.calcul + "0")
     }
     let result = (): void => {
         const res : string = eval(calcul.calcul)
