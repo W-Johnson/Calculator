@@ -1,25 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
-
+import Screen from "./components/Screen";
+import ToolBar from "./components/ToolBar";
 function App() {
+
+    let calcul: string, setCalcul: (value: (((prevState: string) => string) | string)) => void;
+    [calcul, setCalcul] = useState("");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div>
+      <Screen calcul={calcul}/>
+      <ToolBar calcul={calcul} setCalcul={setCalcul}  />
+      </div>
   );
 }
 
